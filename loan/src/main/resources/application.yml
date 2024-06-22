@@ -1,0 +1,12 @@
+server:
+  port: 9191
+  servlet:
+    context-path: /v1
+spring:
+  application:
+    title: Spring Boot
+    version: v3.1.11
+  data:
+    mongodb:
+      uri: mongodb+srv://serey:sereypanha14@nest.wu4gf8c.mongodb.net/account_service
+      authentication-database: true

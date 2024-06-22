@@ -1,0 +1,12 @@
+account:
+  msg: Welcome to the Bank Account Production application
+  build-version: 3
+  mailDetails:
+    hostName: production-account@bank.com
+    port: 9002
+    from: production-account@bank.com
+    subject: Your Account Details from Bank Production Environment
+  activeBranches:
+    - Kandal
+    - Banteay Mean Chey
+    - Svay Reang

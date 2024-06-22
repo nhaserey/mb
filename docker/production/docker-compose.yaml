@@ -1,0 +1,31 @@
+version: "3.8"
+services:
+  configserver:
+    container_name: bank/configserver
+    image: bank/configserver:latest
+    mem_limit: 700m
+    ports:
+      - "8071:8071"
+    networks:
+      - bank
+  account:
+    container_name: bank/account
+    image: bank/account:latest
+    mem_limit: 700m
+    ports:
+      - "9191:9191"
+    networks:
+      - bank
+    depends_on: 
+      - configserver
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 15s
+        max_attempts: 3
+        window: 120s
+    environment:
+      SPRING_PROFILES_ACTIVE: production
+      SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
+networks:
+  bank:

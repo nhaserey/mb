@@ -1,0 +1,20 @@
+{
+    "plugins": [
+        {
+            "type": "add",
+            "pluginName": "fleet.intellij"
+        },
+        {
+            "type": "add",
+            "pluginName": "fleet.java.ai"
+        },
+        {
+            "type": "add",
+            "pluginName": "fleet.javascript.ai"
+        },
+        {
+            "type": "add",
+            "pluginName": "fleet.docker"
+        }
+    ]
+}

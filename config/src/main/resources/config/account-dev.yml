@@ -1,0 +1,12 @@
+account:
+  msg: Welcome to the Bank Account Dev application
+  build-version: 3
+  mailDetails:
+    hostName: dev-account@bank.com
+    port: 9001
+    from: dev-account@bank.com
+    subject: Your Account Details from Bank Dev Environment
+  activeBranches:
+    - Kompong Thom
+    - Kompong Cham
+    - Preah Vihear
